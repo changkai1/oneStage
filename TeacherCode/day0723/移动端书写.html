@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<style>
+			.box{ font-size: 13px; color: red;}
+		</style>
+	</head>
+	<body>
+		<!--
+			PC布局：写固定宽度，高度写还是不写，随意
+			移动端布局：宽度或者是高度，不可以是固定的px数值
+			注意点：
+			1、dpr==设备像素比    物理像素 /设备的独立像素=dpr 
+			比如 iPhone6  物理像素是750  设备的独立像素是375（浏览器解析的是375）
+			750/375=2
+			
+			公司当中设计图的尺寸在移动端上是750或者1080，如果页面书写当中，有小数位，小数位保留2位。
+			1px的数值不用再计算。
+			2、设计图最上面的电池的区域高度，写还是不写，不写的，一般设计图电池区域的高度如果是750的设计图，上面的高度是40px，如果是1080的设计图，上是54px
+			3、<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		-->
+		<div class="box">撒可富盛大开放进来撒地方</div>
+	</body>
+</html>

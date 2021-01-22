@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+.box1{width:200px; height:100px; background-color:red;float:right;}
+.box2{width:300px; height:200px; background-color:blue; float:right; }
+.box3{width:100px; height:100px; background-color:green; float:left; }
+/*
+一旦一个元素浮动之后，后面的元素如果没浮动，后面的元素会跑上去
+如果很多元素都是同一个方向浮动，那么所有的元素横着排。
+
+如果想要所有的元素都是从左往右排，给所有的元素都添加float:left;
+如果想要所有的元素都是从右往左排，给所有的元素都添加float:right;
+如果想要一个靠左一个靠右横着排，就是一个给float:left;一个给float:right;
+
+*/
+.boxs{ width:600px; background-color:pink;}
+</style>
+</head>
+
+<body>
+<div class="boxs">
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</div>
+</body>
+</html>

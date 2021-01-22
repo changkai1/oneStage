@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0; padding:0;}
+.header{height:58px; background:#e93a29;}
+.head_cen{ width:1091px;height:58px; /*height:39px; padding-top:19px;*/ margin:0 auto;}
+.head_cen img{ float:left;margin-top:19px;}
+.head_cen ul{ float:left; margin-left:153px;line-height:58px;}
+.head_cen ul li{ float:left; margin-right:42px; list-style:none; font-size:12px;}
+.head_cen ul li a{color:#ecfefe; text-decoration:none; }
+.head_cen form{ float:right; width:225px; height:26px; border:1px solid #e4e6e5;background:#f1f1f1; margin-top:15px;}
+.head_cen form .text{ width:202px; height:26px; border:0; background:#f1f1f1; text-indent:15px; /*padding-left:15px;*/ float:left; outline:none;/*去除input点击上去之后出现的蓝色边框*/}
+.head_cen form .sub{width:17px;float:left; height:26px;background: url(../images/search.jpg) no-repeat left center; border:0;outline:none;}
+
+/*banner*/
+.banner img{ width:100%; display:block;}
+/*兼容问题：所有的图片在所有的浏览器上都会向下撑大3像素
+解决的方法：img{display:block;}
+*/
+.listbox{ width:1057px; height:229px;margin:0 auto;}
+.listbox dl{ float:left; width:173px; height:184px; text-align:center; border-right:1px dashed #b2b2b2; margin-top:13px; padding-top:2px;}
+.listbox dl dd{font-size:11px; color:#887e75; line-height:22px; }
+.listbox .title{font-size:17px; color:#635353; line-height:46px;}
+/*如果所有的文字大小不一样，测量行高的时候方式也不一样
+文字大小一样的，测量行高的时候从文字的头部到下一行的头部就是行高
+文字大小不一样的时候，测量的行高数据=行距*2+字号大小。
+*/
+.listbox .borderno{ border:none;}
+
+/*相关案例*/
+.aboutbox{ height:488px; background:#eeeeee;}
+.about{ width:1023px; height:469px; margin:0 auto; padding-top:19px;}
+.about h3{ font-size:31px; color:#454545; font-weight:300; line-height:83px;}
+
+.listtext{ width:320px; background:#fff; padding-bottom:28px; float:left; margin:0 10px;}
+.listtext h4{ font-size:15px; color:#1c2127; border-bottom:1px solid #e2e2e2; line-height:35px; /*margin-top:2px; margin-left:20px; margin-right:20px;*/ margin:2px 20px 0 20px;}
+.listtext p{ font-size:11px; color:#887f80; line-height:22px;margin:9px 20px 0 20px;}
+.listtext  div{ text-align:right; margin:0 20px;}
+.listtext  div a{ font-size:10px; color:#6d7c81; text-decoration:none;}
+.more{ font-size:16px;line-height:56px; text-align:center;}
+.more a{ color:#555752;  text-decoration:none;}
+
+.newsbox{ width:1008px; height:344px; padding-top:28px; margin:0 auto;}
+
+.newsbox .left{ width:466px; height:275px;  float:left; border-right:1px dashed #bcbcbc; padding-right:43px;}
+.newsbox h3{ font-size:22px; color:#484848; line-height:36px; font-weight:300;}
+.newsbox .left h4{font-size:15px; color:#212121; line-height:69px; margin-top:3px; font-weight:300;}
+.newsbox .left p{font-size:11px; color:#5d6b6b; line-height:22px; }
+.marbto{margin-bottom:23px;}
+.newsbox .left a,.newsbox .right .text{font-size:11px; color:#ce0e23; text-decoration:none; margin-top:23px; display:block;}
+.newsbox .right .text{ margin-top:12px;}
+.newsbox .right{ width:463px; height:275px; float:right;}
+.newsbox .right ul{ margin-top:20px;}
+.newsbox .right ul li{ list-style:none;line-height:37px; overflow:hidden; background:url(../images/icon.jpg) no-repeat left center;/* text-indent:17px;*/ /*padding-left:17px;*/ }
+.right ul li a{margin-left:17px; text-decoration:none; float:left; font-size:14px; color:#564b5c;}
+.right ul li span{float:right; font-size:10px; color:#737c7b;}
+/*.right ul li img{ float:left; margin-top:15px; margin-right:8px;}*/
+/*
+浮动会引起父元素的高度塌陷  8
+产生的条件：所有的子元素浮动，并且父元素没有高度，父元素会高度塌陷
+解决的方法：
+1、给父元素添加固定高度height
+2、给父元素浮动  没有优点 不用
+3、给父元素添加overflow：hidden；最常用的方法。
+*/
+
+.copyright{ height:30px; background:#4f4f4f;}
+.copyright p{ width:1030px; height:30px;margin:0 auto; text-align:right; font-size:12px; color:#b6bec0; line-height:30px;}
+
+.footer{ height:218px; background:#393939;}
+.foot{ width:1030px; height:186px;padding-top:32px; margin:0 auto;}
+.foot .left{ width:300px;  float:left;}
+.foot p img{ margin-right:10px;}
+.foot .left ul{ margin-top:16px;}
+.foot ul li{ list-style:none; color:#9d9ba0; font-size:12px;}
+.foot ul .num{ font-size:18px;}
+
+.foot .right{ width:430px;  float:right;}
+.foot .right h3{font-size:13px; color:#bbbab8; line-height:21px; margin-bottom:14px;}
+.foot .right ul{ float:left; margin-right:51px;}
+.foot .right ul li{font-size:10px; color:#949391; line-height:19px;}
+.foot .right .mar7{ margin-right:7px;}
+

@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{ margin:0; padding:0;}
+body{height:3000px;}
+.box1{width:200px; height:200px; background:red; }
+.box2{width:500px; height:300px; background:blue; position:absolute; right:30px; top:30px; }
+.boxs{width:800px; height:500px; background:pink;position:relative; }
+.box3{width:400px; height:400px; background:green;}
+</style>
+</head>
+<body>
+<div class="box1">1</div>
+<div class="boxs">
+	<div class="box2">2</div>
+    <p>不脱离文档流 不飘在地上不脱离文档流 不飘在地上</p>
+</div>    
+<div class="box3">3</div>
+<!-- 
+absolute
+1/脱离文档流  飘起来
+2、默认情况下，absolute的参照物是页面的第一屏（相对于body），当所有的元素都给定位的时候，显示的结果就是后来者居上。如果设置了z-index的数值，谁大谁在上。
+如果子元素存在父元素并且父元素有定位，子元素的偏移位置相对于父元素来进行位置移动。
+relative
+1、不脱离文档流 不飘在地上
+2、偏移位置的参照物是元素原来的位置。当所有的元素都给相对定位的时候，元素不会盖上去，如果添加了方向值，元素会发生重叠，这个时候想要改变元素的层叠顺序，可以用z-index来改变。
+3、即使位置移动了，原来的位置还在。
+父元素给relative，子元素absolute。
+ -->
+</body>
+</html>

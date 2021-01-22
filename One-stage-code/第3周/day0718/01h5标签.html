@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    section{
+      width:300px;
+      height:300px;
+      background:red;
+    }
+    article{
+      width:200px;
+      height:200px;
+      background:blue;
+    }
+    aside{
+      width:100px;
+      height:100px;
+      background:skyblue;
+    }
+  </style>
+</head>
+<body>
+  <section>内容块</section>
+  <article>文章块</article>
+  <aside>右边区域</aside>
+  <header>头部</header>
+  <figure>
+    <!-- figure 中只能放置一个 figcaption，可以放图片等，可以用p对图片说明 -->
+    <figcaption><img src="pic2.png" alt=""></figcaption>
+    <p>表格图片</p>
+  </figure>
+
+  <!-- 高亮显示文字 -->
+  <mark>高亮显示</mark>
+
+  <!-- 一个视频多种格式，浏览器将使用第一个可识别的格式进行播放 -->
+  <video controls="controls">
+    <!-- 必须加type属性 -->
+    <source src="video/3theA.mp4" type="video/mp4">
+    <source src="video/3theA.ogg" type="video/ogg">
+    <source src="video/3theA.webm" type="video/webm">
+  </video>
+
+  <!-- 一个视频设置 autoplay="autoplay"在谷歌浏览器不起作用-->
+  <video src="video/chen.mp4" controls="controls" loop="loop" preload="auto" 
+          poster="pic2.png"></video><br/>
+
+  <audio src="audio/金志文 - 夏洛特烦恼.mp3" controls="controls">大</audio>
+
+
+  <!-- datalist用法 -->
+  <input type="text" list="box">
+  <datalist id="box">
+    <option value="鲜花">
+    <option value="鲜花111">
+    <option value="花111">
+    <option value="东山大道花111">
+  </datalist>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{margin: 0;padding: 0;}
+			/*里面是文字的情况*/
+			/*p:after{
+				content:"文字后的内容after";
+				font-size:20px;
+				color:red;
+			}
+			p:before{
+				content:"文字后的内容before";
+				font-size:20px;
+				color:blue;
+			}*/
+			
+			
+			/*里面是图片的情况,不加引号*/
+			/*p:before{
+				content:url(img04.jpg);
+				float:left;
+			}
+			p{
+				background:skyblue;
+				line-height: 379px;
+			}*/
+			
+			
+			/*只对第一个字符起作用*/
+			/*p:first-letter{
+				font-size:40px;
+				color:skyblue;
+			}*/
+			/*只对第一行起作用*/
+			/*p:first-line{
+				font-size:40px;
+				color:pink;
+			}*/
+			
+			
+			/*选中之后的样式*/
+			p::selection{
+				color:red;
+				background:green;
+			}
+		</style>
+	</head>
+	<body>
+		<!--伪对象(元素)
+				:after  与content属性一起使用，定义在对象后的内容,里面的属性修饰的是content里的内容,还可以添加图片
+				:before 与content属性一起使用，定义在对象前的内容,里面的属性修饰的是content里的内容,还可以添加图片
+				:first-letter 定义对象内第一个字符的样式，注：该伪元素只能用于块元素
+				:first-line   定义对象内第一行的样式，注：该伪元素只能用于块元素，ie6以下版本浏览器不支持伪对象选择符
+				::selection   选中之后的样式  只支持这background和color属性
+
+		-->
+		
+		<p>我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字</p>
+		
+	</body>
+</html>

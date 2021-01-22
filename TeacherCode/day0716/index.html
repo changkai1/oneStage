@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{ margin: 0; padding: 0;}
+			html,body{ height: 100%;}
+			.banner{ height:84%; background: red;}
+			.banner img{ width: 100%; height: 100%;}
+			.nav{ height: 11%; background: pink; position: relative; }
+			.nav p{text-align: center; font-size: 13px; position: absolute; top: 42%; width: 100%; background: green;}
+			.nav p a{ color: red; text-decoration: none; margin:0 1.5%;}
+			/*
+			默认情况下 一个块元素的宽是撑满父元素的（width:100%;），但是如果给了绝对定位和浮动之后，如果不设置宽度100%，改元素的宽度就是内容的宽度。
+			 * */
+		</style>
+	</head>
+	<body>
+		<div class="banner"><img src="banner.jpg"/></div>
+		<div class="nav">
+			<p><a href="#">首页</a><a href="#">首页首页</a><a href="#">首页</a><a href="#">首页</a><a href="#">首页</a><a href="#">首页</a><a href="#">首页</a><a href="#">首页</a></p>
+		</div>
+	</body>
+</html>

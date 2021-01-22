@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/*input[type="text"]{ width:300px; height: 300px;}属性值必须是一模一样的，连多个空格都不行*/
+			/*input[type="password"]{ width:200px; height: 200px;}*/
+			/*input[name]{ width: 400px; height: 400px;}*/
+			/*input[class~="bo"]{ width: 300px; height: 300px;}*/
+			/* 只要属性值有“”里面的词就行 */
+			/*input[class*="x"]{ width: 300px; height: 300px;}*/
+			/* 只要属性值有“”里面的东西就行 */
+			/*input[class^=""]{ width: 300px; height: 300px;}*/
+			/* 只要属性值有“”里面的开头就行 */
+			/*input[class$="1"]{ width: 300px; height: 300px;}*/
+			/* 只要属性值有“”里面的结尾就行 */
+			input[class|="box"]{ width: 300px; height: 300px;}
+			/* 只要属性值有“”里面的开头，开头的内容一定是一个规定的完整的词，或者这个词是box-2这种开头的 */
+		</style>
+	</head>
+	<body>
+		<form>
+			<input type="text" id="about" class="box" value="我是文字" name="23" placeholder="1woshhiwenzi" disabled="disabled" />
+			<input type="password" id="about" class="box" value="我是文字" name="23" placeholder="2woshhiwenzi" disabled="disabled" />
+			<input type="radio" id="about" class="box" value="我是文字" name="23" placeholder="woshhiwenzi" disabled="disabled" />
+			<input type="email" id="about" class="box" value="我是文字" name="23" placeholder="3" disabled="disabled" />
+			<input type="checkbox" />
+			<input type="text" class="box2 box1" />
+			<input type="text" />
+		</form>
+	</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body,p{ margin: 0; padding: 0;}
+			.loading{ width: 50px; height: 50px;  margin: 120px auto; position: relative;}
+			.loading div{ width: 50px; height: 50px;  position: absolute;}
+			p{ width: 15px; height: 15px; background: red; border-radius: 50%; text-align: center; line-height: 20px; font-size: 12px; position: absolute; animation: move 1.5s linear infinite;}
+			div p:nth-of-type(1){ left: 0; top: 0;}
+			div p:nth-of-type(2){ right: 0; top: 0;}
+			div p:nth-of-type(3){ right: 0; bottom: 0;}
+			div p:nth-of-type(4){ left: 0; bottom: 0;}
+			.loading div:nth-of-type(2){ transform: rotateZ(45deg);}
+			@keyframes move{
+				from{transform: scale(0);}
+				50%{transform: scale(1);}				
+				to{transform: scale(0);}
+			}
+			div:nth-of-type(1) p:nth-of-type(1){ animation-delay: -0.2s;}
+			div:nth-of-type(2) p:nth-of-type(1){ animation-delay: -0.4s;}
+			div:nth-of-type(1) p:nth-of-type(2){ animation-delay: -0.6s;}
+			div:nth-of-type(2) p:nth-of-type(2){ animation-delay: -0.8s;}
+			div:nth-of-type(1) p:nth-of-type(3){ animation-delay: -1s;}
+			div:nth-of-type(2) p:nth-of-type(3){ animation-delay: -1.2s;}
+			div:nth-of-type(1) p:nth-of-type(4){ animation-delay: -1.4s;}
+			div:nth-of-type(2) p:nth-of-type(4){ animation-delay: -1.6s;}
+		</style>
+	</head>
+	<body>
+		<div class="loading">
+			<div>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+			</div>
+			<div>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+			</div>
+		</div>
+	</body>
+</html>

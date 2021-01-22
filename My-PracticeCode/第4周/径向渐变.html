@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{margin:0;padding:0;}
+			div{margin:30px;width:100px;height:50px;border:3px solid red;text-align:center;font-size:30px;line-height:50px;float:left;}
+			div:nth-of-type(1){background:radial-gradient(red,green);}
+			div:nth-of-type(2){background:radial-gradient(at top left,red,green);}
+			div:nth-of-type(3){background:radial-gradient(at top,red,green);}
+			div:nth-of-type(4){background:radial-gradient(at 0px 0px,red,green);} /*横向纵向坐标点都为0*/
+			div:nth-of-type(5){background:radial-gradient(at 50px 25px,red,green);} /*横向坐标50,纵向25,*/
+			div:nth-of-type(6){background:radial-gradient(at 50px 25px,red 30%,green 80%);} 
+			div:nth-of-type(7){background: radial-gradient(circle,red 30%,green 80%);}
+			div:nth-of-type(8){ background: repeating-radial-gradient(circle,red 30%,green 80%);}
+			
+		</style>
+	</head>
+	<body>
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>8</div>
+		<div>9</div>
+		<div>10</div>
+		<div>11</div>
+		
+		
+	</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{margin:0;padding:0;}
+			a{text-decoration: none;display:block;}
+			li{list-style: none;}
+			ul{
+				width:600px;
+				height:50px;
+			}
+			ul li{
+				width:100px;
+				height: 50px;
+				background:red;
+				float:left;
+				margin-right:1px;
+				text-align: center;
+				line-height: 50px;
+			}
+			ul li a{
+				color:#fff;
+			}
+			ul li ul li{
+				float:none;
+				border-top: 1px solid #fff;
+			
+			}
+			ul li ul li ul{
+				margin-left:101px;
+				margin-top:-51px;
+			}
+			ul li ul{
+					display:none;
+			}
+			/*鼠标经过显示隐藏*/
+			ul li:hover ul{
+				display:block;
+			}
+			ul li:hover ul li ul{
+				display: none;
+			}
+			ul li ul li:hover ul{
+				display:block;
+			}
+			
+			/*鼠标经过变颜色*/
+			ul li a:hover{
+				background: green;
+			}
+			ul li ul li a{
+				background:blue;
+			}
+			ul li ul li a:hover{
+				background: yellow;
+			}
+			ul li ul li ul li a{
+				background: pink;
+			}
+			ul li ul li ul li a:hover{
+				background: skyblue;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li><a href="#">一级导航</a></li>
+			<li><a href="#">一级导航</a>
+				<ul>
+					<li><a href="#">二级导航</a>
+						<ul>
+							<li><a href="#">三级导航</a></li>
+							<li><a href="#">三级导航</a></li>
+							<li><a href="#">三级导航</a></li>
+							<li><a href="#">三级导航</a></li>
+						</ul>
+					</li>
+					<li><a href="#">二级导航</a></li>
+					<li><a href="#">二级导航</a></li>
+					<li><a href="#">二级导航</a></li>
+				</ul>
+			</li>
+			<li><a href="#">一级导航</a></li>
+			<li><a href="#">一级导航</a></li>
+			<li><a href="#">一级导航</a></li>
+		</ul>
+	</body>
+</html>

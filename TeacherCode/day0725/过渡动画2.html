@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body,p,h3{ margin: 0; padding: 0;}
+			body{ background: pink;}
+			div{ width: 377px; height: 280px; border: 3px solid red; margin: 50px; position: relative; overflow: hidden;}
+			img{ display: block;}
+			p{ width: 377px; height: 280px; background: rgba(0,0,0,0); position: absolute; top: 0; transition: 1s;}
+			div:hover p{ background: rgba(0,0,0,0.7);}
+			img:nth-of-type(2){ position:absolute; left:-85px; top: 100px; transition: 1s;}			
+			div:hover img:nth-of-type(2){ left: 149px;}
+			img:nth-of-type(3){ position:absolute; right: -40px; top: 121px;transition: 1s;}
+			div:hover img:nth-of-type(3){ right:170px;}
+			h3{ font-size: 18px; color: red; text-align: center; position: absolute; top: -50px; width: 100%;transition: 1s;}
+			div:hover h3{ top: 20px;}
+		</style>
+	</head>
+	<body>
+		<div>
+			<img src="images/box_img2.png" />
+			<p></p>
+			<img src="images/l_o.png" />
+			<img src="images/r_f.png" />
+			<h3>几十块雷锋精神</h3>
+		</div>
+		<!--
+			1/先做默认的
+			2、做鼠标经过的样式
+			3、添加过渡动画
+			过渡动画做鼠标经过的案例必然会用到定位
+		-->
+	</body>
+</html>

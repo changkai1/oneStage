@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body,p{margin:0;padding:0;}
+    html,body{
+      height:100%;
+    }
+    body{
+      /* 父元素设置为弹性盒子 */
+      display:flex;
+      flex-direction: column;
+
+    }
+    header{
+      height:100px;
+      background:red;
+    }
+    section{
+      flex:1;
+      background:pink;
+      overflow:auto;
+    }
+    footer{
+      height:100px;
+      background:green;
+    }
+    p{
+      height:1000px;
+    }
+  </style>
+</head>
+<body>
+  <header>1</header>
+  <section><p>中间</p></section>
+  <footer>3</footer>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 2的3次方写法 -->
+  2<sup>3</sup>
+
+  <!-- name里面的文字在浏览器上是不显示的,用于给后台提交数据,
+       name获取的是文本框输入的内容
+       网址传输部分：01表单.html?username=sasasas&pwd=123456
+  -->
+  <form action="" name="表单" method="get">
+    <input type="text" placeholder="手机号/邮箱/小米ID" name="username">文本框
+    <input type="password" placeholder="密码" name="pwd">密码框
+    <input type="submit" value="登录">提交按钮
+    <input type="radio">单选按钮
+
+    <!-- 单选按钮必须加name，同一组的单选框，name必须一样 -->
+    性别：男<input type="radio" name="sex" checked="checked"> 女<input type="radio" name="sex" disabled="disabled">
+    
+    <!-- 多选按钮 -->
+    <input type="checkbox"/>多选按钮
+    <input type="checkbox" checked="checked"/>
+    <input type="checkbox" disabled="disabled"/>
+    <input type="checkbox"/>
+    <textarea cols="10" rows="5"></textarea>
+  </form>
+</body>
+</html>

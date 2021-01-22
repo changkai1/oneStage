@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.box{ width: 300px; height: 300px; background: red;
+			/*animation-name: move,move1;
+			animation-duration:3s,2s ;*/
+			/*animation-delay:5s ;*/
+			/*animation-timing-function:cubic-bezier(0.6, 1.39, 0.77, -0.32) ;*/
+			/*animation-timing-function:steps(4) ;*/
+			/*animation-name:move ;
+			animation-duration:2s ;
+			animation-delay:3s ;
+			animation-iteration-count:3;
+			animation-direction:alternate ;
+			animation-fill-mode:forwards;*/
+			
+			/*
+			 animation-fill-mode  控制动画的开始和结束的样式
+			 animation-fill-mode：backwards；动画开始的样式是keyframes定义的第一帧
+			  animation-fill-mode：forwards；动画结束的样式是keyframes定义的最后一帧
+			 * */		
+			}
+			div:hover{ 
+				animation: move 2s 3  forwards alternate;
+				/*animation-play-state:paused ;  控制动画在执行的过程中可以暂停，这个属性放在hover的样式上*/
+				}
+			@keyframes move{
+				/*0%{background: blue;}
+				20%{ width: 1500px; background: green;}
+				80%{ height: 800px;}
+				100%{background: pink;}*/
+				0%{ width: 500px;}
+				100%{ width: 1500px;}
+			}
+			@keyframes move1{
+				0%{border-radius: 30px;}
+				
+				100%{ border-radius: 50%;}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+	</body>
+</html>

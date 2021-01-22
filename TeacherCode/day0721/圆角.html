@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{ width: 200px; height: 200px; background: red; float: left; margin: 20px; font-size: 50px; text-align: center; line-height: 200px; color: #fff;}
+			/*
+			 1/切正圆
+			 1）border-radius: 20px;
+			 2） border-radius: 20px 30px;切 2组对角相等的正圆  第1个数值是左上和右下 
+			 3）border-radius: 20px 30px 40px;  第1个是左上  2--右上和左下  3---右下
+			 4） border-radius: 20px 30px 40px 50px;  1--上  2--右  3--下  4--左			 
+			 2、切椭圆
+			 1)border-radius: 10px/20px;  切得是水平半径10px  垂直半径为20px的4个相同的椭圆
+			 2)border-radius: 10px 30px/20px 40px;  切得是左上和右下水平半径为10 垂直半径为20的椭圆，右上和左下水平半径为30 垂直半径为40的椭圆			 
+			 * */
+			div:nth-of-type(1){ border-radius: 20px;}
+			div:nth-of-type(2){ border-radius: 20px 30px;}
+			div:nth-of-type(3){ border-radius: 20px 30px 40px;}
+			div:nth-of-type(4){ border-radius: 20px 30px 40px 50px;}
+			div:nth-of-type(5){ border-radius: 20px 0 0px 0px;}
+			div:nth-of-type(6){ border-top-right-radius: 80px;}
+			div:nth-of-type(7){ border-radius: 50%;}
+			div:nth-of-type(8){ width: 200px; height: 100px; border-radius: 100px 100px 0 0;}
+			div:nth-of-type(9){ width: 100px; height: 200px; border-radius: 0px 100px 100px 0;}
+			div:nth-of-type(10){  border-radius: 200px 0px 0px 0;}
+			div:nth-of-type(11){  border-radius: 10px/20px;}
+			div:nth-of-type(12){  border-radius: 10px 30px/20px 40px;}
+			div:nth-of-type(13){  border-radius: 10px 30px 50px/20px 40px 60px;}
+			div:nth-of-type(14){  border-radius: 10px 30px 50px 70px/20px 40px 60px 80px;}
+			div:nth-of-type(15){  border-radius: 10px 0px 0px 0px/20px 0px 0px 0px;}
+			/*div:nth-of-type(16){  border-top-right-radius: 30px/60px;}  切椭圆这样写是不对的。*/
+			div:nth-of-type(17){width:200px; height: 100px; border-radius: 100px/50px;}
+			/*
+			 5px  
+			 10px 
+			 20px  
+			 50%
+			 * */
+			div:nth-of-type(18){width:100px; height: 50px; border-radius: 5px;}
+			div:nth-of-type(19){width:100px; height: 50px; border-radius: 10px;}
+			div:nth-of-type(20){width:100px; height: 50px; border-radius: 20px;}
+			div:nth-of-type(21){width:100px; height: 50px; border-radius: 50px;}
+			
+		</style>
+	</head>
+	<body>
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>8</div>
+		<div>9</div>
+		<div>10</div>
+		<div>11</div>
+		<div>12</div>
+		<div>13</div>
+		<div>14</div>
+		<div>15</div>
+		<div>16</div>
+		<div>17</div>
+		<div>18</div>
+		<div>19</div>
+		<div>20</div>
+		<div>21</div>
+	</body>
+</html>

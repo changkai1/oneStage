@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			ul li{ border:3px solid red; margin-bottom:10px;}
+			/*否定伪类*/
+			ul li:not(:nth-of-type(2n)){ border-color: blue;}
+			/*根伪类*/
+			/*:root{ background: blue;}*/
+			/*目标伪类*/
+			div{ height: 500px; margin-bottom: 50px;}
+			#box1{ background: red;}
+			#box2{ background: blue;}
+			#box3{ background: pink;}
+			div:target{background: black !important; font-size: 100px; color: #FFFFFF;}
+			/*语言伪类*/
+			q:lang(fr){quotes: "&&""&&";}
+			q:lang(pt){quotes: "^_^""&^_^";}
+			q:lang(zh){quotes: "^^""----";}
+			/*动态伪类  权重10*/
+			.box{border: 1px solid pink; outline: none;}
+			input:focus{ border: 1px solid red;}			
+		</style>
+	</head>
+	<body>
+		<!--否定伪类-->
+		<!--<ul>
+			<li>li1</li>
+			<li>li2</li>
+			<li>li3</li>
+			<li>li4</li>
+		</ul>
+		<a href="#box1">11111</a>
+		<a href="#box2">222222222</a>
+		<a href="#box3">33333333</a>
+		<div id="box1">11111</div>
+		<div id="box2">222222222</div>
+		<div id="box3">33333333</div>-->
+		<!--<p>中文：<q lang="zh">我是中国人</q></p>
+		<p>英文：<q lang="en">I am Chinese</q></p>
+		<p>葡萄牙语：<q lang="pt">EU sou chinês</q></p>
+		<p>法语：<q lang="fr">Je suis Chinois</q></p>-->
+		<!-- focus 动态伪类的-->
+		<form>
+			<input type="text" class="box"/>
+		</form>
+	</body>
+</html>

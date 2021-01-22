@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0; padding:0;}
+.header{height:58px; background:#e93a29;}
+.head_cen{ width:1091px;height:58px; /*height:39px; padding-top:19px;*/ margin:0 auto;}
+.head_cen img{ float:left;margin-top:19px;}
+.head_cen ul{ float:left; margin-left:153px;line-height:58px;}
+.head_cen ul li{ float:left; margin-right:42px; list-style:none; font-size:12px;}
+.head_cen ul li a{color:#ecfefe; text-decoration:none; }
+.head_cen form{ float:right; width:225px; height:26px; border:1px solid #e4e6e5;background:#f1f1f1; margin-top:15px;}
+.head_cen form .text{ width:202px; height:26px; border:0; background:#f1f1f1; text-indent:15px; /*padding-left:15px;*/ float:left; outline:none;/*去除input点击上去之后出现的蓝色边框*/}
+.head_cen form .sub{width:17px;float:left; height:26px; 
+background: url(../images/search.jpg) no-repeat left center; border:0;outline:none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

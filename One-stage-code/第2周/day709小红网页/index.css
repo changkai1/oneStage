@@ -1,0 +1,159 @@
+*{
+  margin:0;
+  padding:0;
+}
+.header {
+  background: #e93a29;
+  height:58px;
+}
+.head_cen {
+  width:1091px;
+  height:58px;
+  margin:0 auto;
+}
+.head_cen img{
+  margin-top:19px;
+  float:left;
+}
+.head_cen ul {
+  float:left;
+  line-height:58px;
+  margin-left:153px;
+}
+.head_cen ul li{
+  float:left;
+  list-style:none;
+  margin-right:42px;
+  font-size:12px;
+
+}
+.head_cen ul li a{
+  color:#fefffa;
+  text-decoration:none;
+}
+.head_cen form{
+  width:225px;
+  height:26px;
+  border:1px solid #e7e5e6;
+  float:right;
+  margin-top:15px;
+  background:#f1f1f1;
+}
+.head_cen form .text{
+  float:left;
+  width:202px;
+  height:26px;
+  border:0;
+  outline:none;
+  text-indent:14px;
+  background:#f1f1f1;
+}
+.head_cen form .sub{
+  width:20px;
+  height:26px;
+  float:left;
+  outline:none;
+  background:url(image/search.jpg) no-repeat left center #f1f1f1;
+  border:0;
+}
+
+.banner img{
+  width:100%;
+  display:block;
+}
+
+.listbox {
+  width:1062px;
+  height:216px;
+  /* background:red; */
+  margin:0 auto;
+  padding-top:13px;
+}
+.listbox dl{
+  width:176px;
+  height:184px;
+  text-align:center;
+  border-right:1px dashed #b0b0b0;
+  float:left;
+}
+.listbox dl dd {
+  font-size:11px;
+  color:#767e81;
+  line-height:22px;
+}
+.listbox .title{
+  font-size:17px;
+  color:#985449;
+  line-height:43px;
+}
+.listbox dl dt img {
+  margin-bottom:4px;
+}
+.listbox .borderno{
+  border-right:none;
+}
+
+/* 相关案例 */
+.aboutbox {
+  height:492px;
+  background:#eeeeee;
+}
+.about {
+  width:1020px;
+  height:462px;
+  /* background:red; */
+  margin:0 auto;
+  padding-top:18px;
+  padding-bottom:12px;
+}
+.about h4 {
+  font-size:32px;
+  color:#444444;
+  line-height:84px;
+  font-weight:300;
+}
+.listtext{
+  width:320px;
+  background:#ffffff;
+  float:left;
+  margin:0 10px;
+  padding-bottom:28px;
+}
+.listtext h5 {
+  font-size:15px;
+  color:#261f26;
+  line-height:34px;
+  /* 图片向下撑大三像素 */
+  border-bottom:1px solid #e2e2e2;
+  margin:3px 20px 0 20px;
+}
+.listtext p {
+  /* border: 1px solid red; */
+  font-size:11px;
+  color:#7f8085;
+  line-height:22px;
+  /* margin-top:9px; */
+  margin:9px 20px 0 20px;
+}
+.listtext div{
+  text-align: right;
+  margin:0 20px;
+  /* border:1px solid red; */
+}
+.listtext div a{
+  text-decoration: none;
+  font-size:10px;
+  color:#7f8085;
+}
+.more {
+  text-align: center;
+  line-height:56px;
+  font-size:16px;
+}
+.more a{
+  color:#535967;
+  text-decoration: none;
+}
+
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			html{ font-size: 100vw;}
+			.text1{ font-size: 50px;}
+			.text2{font-size: 0.5rem;}
+		</style>
+	</head>
+	<body>
+		<!--布局上
+			1、昨天类似穷游he拉钩网站，尾部固定的布局，这个时候给尾部添加固定定位
+			2、头尾固定的布局、布局上用的是弹性盒子做的。
+			写法上：数据用的单位的不同
+			1、昨天类似穷游he拉钩网站  用的单位是px的，这种类型的移动端网站，文字和图片还有容器大小基本不动，只是间距在变，写法上就是单位是px。  px+%+弹性盒子
+			2、类似网易新闻和淘宝类型的移动端网站，文字图片和容器都在变，这个时候用的单位是rem，  rem+%+弹性盒子  根元素设置的font-size用的单位vw-->
+			
+			<!--
+				rem  相对单位  相对于根元素HTML的字号大小来说的
+				rem和px的之间的换算  1rem==？px 比如html{ font-size: 100px;} 1rem=100px
+				 vw 相对单位  viewport  width  窗口的宽度  相对于窗口的宽度   默认情况下满屏的时候是100vw
+				 rem  vw  px  3个之间的换算？
+				rem是写页面需要的单位
+				vw是用来给HTML设置font-size的单位
+				px是ps设计图测量的单位
+				
+				1、rem和px之间的换算，比如是1rem=100px（100px不是必须的，可以是200px也可以是50px）
+				2、vw和px之间的换算？已经知道的条件满屏的时候是100vw，
+				比如我们看iPhone5手机，在浏览器上显示的320px，那么这个时候100vw=320px==》1vw=3.2px
+				
+				1rem=100px
+				1vw=3.2px
+				最终的结果：1rem=31.25vw=100px
+				1rem=100px
+				1vw=3.75px
+				最终的结果：1rem=26.67vw=100px
+				
+			-->
+			<div class="text1">文字文字</div>
+			<div class="text2">文字文字</div>
+
+	</body>
+</html>

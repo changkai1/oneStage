@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			li{ border: 5px solid red; margin-bottom: 10px; font-size: 30px;}
+			/*.box li:first-child{ border: 5px solid blue;}*/
+			/*先解析:first-child 第一个子元素，然后在跟：前面的元素进行对比，如果符合就执行样式，如果不符合不执行样式*/
+			/*.box li:last-child{ border: 5px solid blue;}*/
+			/*.box li:nth-child(5),.box li:nth-child(8){ border: 5px solid blue;}*/
+			/*.box li:nth-child(-2n+6){ border: 5px solid blue;}*/
+			/*n从什么开始   0开始  2n/even偶数  2n+1/odd  基数*/
+			.box li:nth-last-child(2n){ border: 5px solid blue;}
+			/*.box li:nth-child(2n){ border: 5px solid blue;}*/
+			/*-child结构伪类选择器更适合结构是同类型的标签来用。*/
+			/*.box li:nth-of-type(2n){ border: 5px solid blue;}*/
+			/*-type结尾的在结构解析的过程中，会先选择同类型的标签，然后在筛选伪类选择器给的条件*/
+			/*.box li:first-of-type{ border: 5px solid blue;}*/
+			/*.box li:only-child{ border: 5px solid blue;}*/
+			/*.box li:only-of-type{ border: 5px solid blue;}*/
+			/*.box li:empty{ border: 5px solid blue;}*/			
+		</style>
+	</head>
+	<body>
+		<ul class="box">
+			<p></p>
+			<li>li1</li>
+			<li></li>
+			<li>li3</li>
+			<p>pppppppppp</p>
+			<li>li4</li>
+			<li>li5</li>
+			<p>pppppppppp</p>
+			
+			<li>li6</li>
+			<li>li7</li>
+			<li>li8</li>
+			<li>li9</li>
+			<li>li10</li>
+			<p>pppppppppppp</p>
+		</ul>
+		
+	</body>
+</html>

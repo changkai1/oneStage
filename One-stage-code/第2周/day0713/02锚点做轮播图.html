@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{margin:0;padding:0;}
+			.picbox{
+				width:500px;
+				height:375px;
+				border:1px solid #000;
+				margin:100px;
+				position:relative;
+			}
+			.picbox .pic{
+				width:500px;
+				height:375px;
+				overflow: hidden;
+			}
+			.picbox p a{
+				float:left;
+				text-decoration: none;
+				width:20px;
+				height:20px;
+				background:#000000;
+				margin:0 5px;
+				text-align: center;
+				opacity:0.6;
+				filter:alpha(opacity=60);
+				color:#fff;
+			}
+			.picbox p{
+				position:absolute;
+				bottom:20px;
+				right:20px;
+			}
+			.picbox p a:hover{
+				opacity:1;
+				filter:alpha(opacity=100);
+			}
+			.picbox .pic img{display:block;}
+		</style>
+	</head>
+	<body>
+		<div class="picbox">
+			<div class="pic">
+				<img src="images/img04.jpg" alt="" id="pic1"/>
+				<img src="images/img05.jpg" alt="" id="pic2"/>
+				<img src="images/img06.jpg" alt="" id="pic3"/>
+				<img src="images/img07.jpg" alt="" id="pic4"/>
+			</div>
+			<p>
+				<a href="#pic1">1</a>
+				<a href="#pic2">2</a>
+				<a href="#pic3">3</a>
+				<a href="#pic4">4</a>
+			</p>
+		</div>
+	</body>
+</html>

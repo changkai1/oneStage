@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{ margin: 0; padding: 0;}
+			h3{ text-align: center;}
+			ul{ width: 800px; height: 500px; border: 3px solid red; margin: 50px auto; }
+			ul li{ list-style: none; border: 1px solid blue; height: 200px; width: 200px; }
+			/*
+			 * 1/display: flex;给父元素添加之后，项目横着排列并且子元素的高是拉伸的（子元素的高=父元素的高）
+			 
+			 * */
+			ul:nth-of-type(1){display:flex; flex-direction: row; flex-wrap: wrap;/* flex-flow:row wrap;*/ justify-content: space-around; /*align-items:baseline;*/ align-content: flex-start;}
+			/*ul:nth-of-type(1) li:nth-of-type(2){ font-size: 30px;}
+			ul:nth-of-type(1) li:nth-of-type(3){ font-size: 60px;}*/
+			ul:nth-of-type(2){display:flex; flex-direction: column; flex-wrap:wrap ;}
+		</style>
+	</head>
+	<body>
+		<h3>默认的主轴是X轴水平的flex-direction: row;，所以子元素横着排列</h3>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<!--<li>4</li>
+			<li>5</li>-->
+		</ul>
+		<h3>flex-direction: column;之后主轴是Y轴，所以子元素竖着排</h3>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+		</ul>
+	</body>
+</html>

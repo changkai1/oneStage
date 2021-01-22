@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body,p{ margin: 0; padding: 0;}
+			div{ width: 400px; height: 400px; border: 2px solid red; margin: 30px auto; perspective: 100px;}
+			p{ width: 100px; height: 100px; background: pink; margin: 150px; transition: 1s;/*transform-origin: -20px -90px;*/}
+			/*div:hover p{ transform:rotateX(70deg) rotateY(45deg) rotateZ(49deg);}*/
+			/*div:hover p{ transform:rotate3d(0,1,1,40deg);}*/
+			/*div  p{ transform:rotateZ(90deg) translateY(100px);}*/
+			/*div  p{ transform: translateY(100px) rotateZ(90deg);}*/
+			/*div:hover p{ transform:scale(-0.5);}*/
+			/*div:hover p{ transform:skew(-60deg);}*/
+			/*div:hover p{ transform:rotateZ(230deg); }*/
+			
+			
+		</style>
+	</head>
+	<body>
+		<div>
+			<p>232</p>
+		</div>
+		<!--
+			transform: translate(-100px); 默认X轴平移
+			transform: translateY(100px) translateX(100px);==transform:translate(100px,100px)
+			transform: translateY(100px) translateX(100px) translateZ(100px);==transform:translate3d(100px,100px,100px)
+			
+			transform: rotate(); 默认Z轴旋转
+			transform: rotateX(); X轴旋转的时候，如果是+值，则元素往里面旋转
+			transform:rotateY(45deg);Y轴旋转的时候，如果是+值，站在元素上面上看，则是逆时针旋转
+			transform: rotate如果是2D平面的时候，当X和Y轴旋转的度数是90deg或者270ded的时候，元素是看不见的
+			transform:rotateX(70deg) rotateY(45deg) rotateZ(49deg);
+			transform:rotate3d(0,1,1,40deg);前3个参数表示的是X轴，Y轴，Z轴取值是0或者1，如果是0则代表该轴不旋转，如果是1，则代表这个轴旋转，具体的旋转度数由第4个参数决定
+			注意点：元素在旋转的时候，绕着的那个轴位置不动，其他的2个轴会进行旋转。
+			div  p{ transform:rotateZ(90deg) translateY(100px);}结果不一样
+			div  p{ transform: translateY(100px) rotateZ(90deg);}
+			
+			transform:scale(0.5);  缩放的默认值是1，比1大就是放大，比1小就是缩小，如果只给一个数值，宽高同时变化
+			transform:scaleX(0.5) scaleY(2);
+			transform:skew(60deg); 默认是X轴倾斜，倾斜没有Z轴倾斜这一说
+		-->
+	</body>
+</html>

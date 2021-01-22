@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body,ul{ margin: 0; padding: 0;}
+			body{ background: black;}
+			div{ width: 500px; height: 500px; border: 3px solid red; margin: 120px auto; perspective: 1000px; /*perspective-origin: right bottom;*/}
+			ul{ width: 300px; height: 300px; margin: 100px; position: relative; transform-style: preserve-3d; animation: move 2s linear infinite; transform-origin: center center 150px; /*transform: rotateY(180deg);*/}
+			ul li{ width: 300px; height: 300px; list-style: none; font-size: 50px; text-align: center; line-height: 300px; color: #fff; position: absolute; opacity: 0.8;}
+			ul li:nth-of-type(1){ background: red; /*backface-visibility: hidden;*/}
+			ul li:nth-of-type(2){ background: blue; /*top: -300px;*/ 
+			/*transform-origin: top;
+			transform: rotateX(90deg);*/
+			transform-origin: bottom;
+			transform:translateY(-300px) rotateX(-90deg);
+			}
+			ul li:nth-of-type(3){ background: pink;
+			transform-origin: left;
+			transform: translateX(300px) rotateY(-90deg);
+			}
+			ul li:nth-of-type(4){ background: yellow;
+			transform-origin: top;
+			transform: translateY(300px) rotateX(90deg);
+			}
+			ul li:nth-of-type(5){ background: skyblue;
+			transform-origin: right;
+			transform: translateX(-300px) rotateY(90deg);
+			}
+			ul li:nth-of-type(6){ background: green;
+			transform: translateZ(300px);
+			}
+			@keyframes move{
+				from{ transform: rotateY(0deg);}
+				to{transform: rotateY(360deg);}
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+			</ul>
+		</div>
+	</body>
+</html>

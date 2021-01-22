@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{ margin: 0; padding: 0;}
+			ul{width: 736px; height: 78px; border: 2px solid red; margin: 40px;}
+			ul li{ float: left; list-style: none; border: 1px solid blue;}
+			ul .home{ width: 100px; height: 78px; background: url(images/nav.png) no-repeat;}
+			ul .home:hover{ background: url(images/nav-on.png) no-repeat;}
+			ul .weixin{ width: 125px; height: 78px; background: url(images/nav.png) no-repeat -100px top;}
+			ul .weixin:hover{background: url(images/nav-on.png) no-repeat -100px top;}
+			ul .open{ width: 146px; height: 78px; background: url(images/nav.png) no-repeat -225px top;}
+			ul .open:hover{background: url(images/nav-on.png) no-repeat -225px top;}			
+			/** 过渡版
+			ul li{ float: left; list-style: none;height: 78px; border: 1px solid blue;background: url(images/nav.png) no-repeat;}
+			ul li:hover{background: url(images/nav-on.png) no-repeat;}
+			ul .home{ width: 100px;  }			
+			ul .weixin{ width: 125px;  background-position: -100px top;}
+			ul .weixin:hover{background-position: -100px top;}		
+			ul .open{ width: 146px;  background-position:  -225px top;}
+			ul .open:hover{background-position: -225px top;}*/
+			/*最终精简版
+			ul li{ float: left; list-style: none;height: 78px; border: 1px solid blue;background: url(images/nav.png) no-repeat;}
+			ul li:hover{background-image: url(images/nav-on.png);}
+			ul .home{ width: 100px;}			
+			ul .weixin{width: 125px;  background-position: -100px top;}	
+			ul .open{ width: 146px;  background-position:  -225px top;}*/		
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li class="home"><a href=""></a></li>
+			<li class="weixin"><a href=""></a></li>
+			<li class="open"><a href=""></a></li>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+		</ul>
+	</body>
+</html>

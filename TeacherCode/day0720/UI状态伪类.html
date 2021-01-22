@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/*form p input:disabled{ width: 300px; height: 300px;}*/
+			/*form p input:checked{ width: 300px; height: 300px;}*/
+			form p input:enabled{ width: 300px; height: 300px;}
+			/* :enabled 除了禁用的之外都进行变化*/			
+		</style>
+	</head>
+	<body>
+		<form>
+			<p>文本<input type="text" /></p>
+			<p>单选<input type="radio" disabled="disabled" /></p>
+			<p>密码<input type="password"  disabled="disabled"/></p>
+			<p>邮件<input type="email" /></p>
+			<p>多选<input type="checkbox" checked="checked" /></p>
+			<p>单选<input type="radio" checked="checked" /></p>
+			<p>多选<input type="checkbox" checked="checked" /></p>
+			
+		</form>
+	</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{margin:0;padding:0;}
+			.dog{
+				width:220px;
+				height:220px;
+				border:5px solid #999999;
+				margin:100px;
+				position:relative;
+			}
+			.dog .tu{
+				position:absolute;
+				bottom:20px;
+				left:20px;
+			}
+			.dog p{
+				width:210px;
+				height:210px;
+				background:rgba(255,255,255,0.5);
+				border:1px solid green;
+				position:absolute;
+				top:-5px;
+				left:-5px;
+				padding:10px;
+				display:none;
+			}
+			.dog .tu2{
+				display:none;
+			}
+			.dog:hover p{
+				display:block;
+			}
+			.dog:hover .tu2{
+				display:block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="dog">
+			<img src="images/img01.jpg" alt="" />
+			<img src="images/tu.gif" alt="" class="tu" />
+			<p><img src="images/logo.gif" alt="" />今天天气真好啊，哈哈哈哈</p>
+			<img src="images/tu2.gif" alt="" class="tu tu2"/>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				background:yellowgreen;
+			}
+			*{margin:0;padding:0;}
+			ul{
+				width:1000px;
+				height:92px;
+				margin:100px;
+				/*border:1px solid blue;*/
+			}
+			ul li{
+				list-style:none;
+				float:left;
+				width:92px;
+				height:92px;
+				/*border:1px solid red;*/
+				line-height: 92px;
+				margin:0 10px;
+				text-align: center;
+			}
+			ul li a img{
+				vertical-align: middle;
+			}
+			ul li:hover{
+				background:url(images/bg.png) no-repeat;
+			}
+			
+			/*第一种*/
+			.box{
+				width:300px;
+				height:300px;
+				border:1px solid blue;
+				margin:50px;
+				text-align:center;
+				display:table;
+			}
+			.box p{
+				display:table-cell;
+				vertical-align:middle;
+			}
+			
+			/*第二种*/
+			.box1{
+				width:300px;
+				height:300px;
+				margin:50px;
+				background:skyblue;
+				text-align:center;
+			}
+			.box1 span{
+				display:inline-block;
+				height:100%;
+				background:pink;
+				vertical-align: middle;
+			}
+			.box1 img{
+				vertical-align: middle;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li><a href="#"><img src="images/logo1.png"/></a></li>
+			<li><a href="#"><img src="images/logo2.png"/></a></li>
+			<li><a href="#"><img src="images/logo3.png"/></a></li>
+			<li><a href="#"><img src="images/logo4.png"/></a></li>
+			<li><a href="#"><img src="images/logo5.png"/></a></li>
+			<li><a href="#"><img src="images/logo6.png"/></a></li>
+			<li><a href="#"><img src="images/logo7.png"/></a></li>
+		</ul>
+		
+		<div class="box">
+			<p>水平垂直居中</p>
+		</div>
+		
+		<div class="box1">
+			<img src="images/bg.png" alt="" /><span></span>
+		</div>
+		
+</html>

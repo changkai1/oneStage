@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{margin:0;padding:0;}
+			li{list-style: none;}
+			a{text-decoration: none;}
+			ul{
+				width:500px;
+				height:50px;
+				/*border:1px solid red;*/
+			}
+			ul li{
+				width:100px;
+				height:50px;
+				background:gray;
+				float:left;
+				margin-right:1px;
+			  text-align: center;
+			  line-height:50px;
+			}
+			ul li a{
+				font-size: 18px;
+				
+				display:block;
+			}
+			ul li ul{
+				display:none;
+			}
+			ul li:hover ul{
+				display:block;
+			}
+			ul li a:hover{
+				background:black;
+				text-decoration: underline;
+				color:#fff;
+			}
+			
+			/*二级导航竖着排*/
+			ul li ul li{
+				float:none;
+				border-top:1px solid #fff;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<ul>
+			<li><a href="#">一级导航</a></li>
+			<li><a href="#">一级导航</a>
+				<ul>
+					<li><a href="#">二级导航</a></li>
+					<li><a href="#">二级导航</a></li>
+					<li><a href="#">二级导航</a></li>
+				</ul>
+			</li>
+			<li><a href="#">一级导航</a></li>
+			<li><a href="#">一级导航</a></li>
+		</ul>
+	</body>
+</html>

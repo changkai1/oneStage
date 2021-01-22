@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{ margin: 0; padding: 0;}
+			.box{ background: red; width: 1000px;zoom: 1; /*visibility: hidden;*/ }
+			.box:after{ content: ""; clear: both; height: 0; overflow: hidden; display: block;visibility: hidden;}
+			.left{ float: left; width: 200px; height: 200px; background: blue;}
+			.right{ float: right; width: 200px; height: 200px; background: pink;}
+			/*.all{ clear: both; background: skyblue; border: 1px solid black; height: 0; overflow: hidden;}*/
+			/*p:after{content: "我是后面的东西"; font-size: 50px; color: red; display: block;}*/
+			/*p:after{content: url(../../第1周/day0706/images/index_03.jpg); float: left; }*/
+			p:before{content: url(../../第1周/day0706/images/index_03.jpg); float: left; }
+			p{ background: green; line-height: 50px;}
+			/*p:first-letter{ font-size: 100px; color: blue;}*/
+			p:first-line{ font-size: 100px; color: blue;}
+			/*p:before{content: "我是qian面的东西"; font-size: 50px; color: red; display: block;}*/
+			p::selection{ color: red; background: green; }
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="left">left</div>
+			<div class="right">right</div>
+			<!--<p class="all"></p>-->
+		</div>
+		<p>我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp我是文字pp</p>
+	</body>
+</html>
